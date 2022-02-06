@@ -3,6 +3,7 @@ async function signupFormHandler(event) {
   
     const username = document.querySelector('#username-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
+    const errorMessage = document.querySelector('#error-signup');
   
     if (username && password) {
       const response = await fetch('/api/users', {
@@ -18,7 +19,7 @@ async function signupFormHandler(event) {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert(response.statusText);
+        errorMessage.innerHTML = "Signup username/password is incorrect";
       }
     }
 }
@@ -28,6 +29,7 @@ async function loginFormHandler(event) {
   
     const username = document.querySelector('#username-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
+    const errorMessage = document.querySelector('#error-login');
   
     if (username && password) {
       const response = await fetch('/api/users/login', {
@@ -42,7 +44,7 @@ async function loginFormHandler(event) {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert(response.statusText);
+        errorMessage.innerHTML = "Login username/password is incorrect";
       }
     }
 }
