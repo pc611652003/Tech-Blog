@@ -1,5 +1,5 @@
 <section>
-  <a href="/dashboard/add"><button id="addPost-btn" class="btn-no-style">Add Post</button></a>
+  <a href="/dashboard/add"><button id="addPost-btn">Add Post</button></a>
 </section>
 
 <section>
@@ -10,7 +10,6 @@
     {{#each posts as |post|}}
     <li>
       {{> post-brief-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
   </ol>

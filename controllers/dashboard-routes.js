@@ -41,9 +41,9 @@ router.get('/', withAuth, (req, res) => {
       });
 });
 
-router.get('/add', (req, res) => {
+router.get('/add', withAuth, (req, res) => {
   if (req.session.loggedIn) {
-    res.render('add-post');
+    res.render('add-post', { loggedIn: true });
     return;
   }
 

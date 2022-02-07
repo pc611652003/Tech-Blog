@@ -8,6 +8,7 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
+  background-color: mistyrose;
 }
 
 a {
@@ -98,7 +99,7 @@ main {
   cursor: pointer;
   text-decoration: none;
   color: #225ca3;
-  font-size: 100%;
+  font-size: 200%;
   font-weight: bold;
   transition: color .1s;
   margin-left: 16px;
@@ -120,6 +121,8 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  width: 100%;
+  background-color: peachpuff;
 }
 
 .post .title span {
@@ -131,15 +134,6 @@ main {
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
 }
 
 .comment-form {
@@ -175,4 +169,21 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+.blog-title {
+  background-color: powderblue;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.content {
+  background-color: oldlace;
+  margin: 0.5vw 1vw;
+}
+
+.content p {
+  padding: 0.5vw;
 }

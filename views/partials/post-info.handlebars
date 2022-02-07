@@ -1,15 +1,20 @@
 <article class="post">
-  <div class="title">
-    <a href="/post/{{id}}">{{title}}</a>
-  </div>
-  <div class="content">
-    <p>
-      {{content}}
-    </p>
-  </div>
-  <div class="meta">
-    by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div>
+  <a href="/post/{{id}}">
+    <div class="title">
+      {{title}}
+    </div>
+  </a>
+
+    <div class="content">
+      <p>
+        {{content}}
+      </p>
+    </div>
+
+    <div class="meta">
+      by {{user.username}} on {{format_date created_at}}
+      |
+      {{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
+
 </article>

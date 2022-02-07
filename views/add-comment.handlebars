@@ -1,8 +1,10 @@
 
 {{> post-info post}}
 
-{{#if loggedIn}}
 <form class="comment-form">
+  <div>
+    <h3>Add comments</h3>
+  </div>
   <div>
     <textarea name="comment-body"></textarea>
   </div>
@@ -11,11 +13,7 @@
     <button type="submit">add comment</button>
   </div>
 </form>
-{{/if}}
 
 {{> comments post.comments}}
 
-{{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
-{{/if}}

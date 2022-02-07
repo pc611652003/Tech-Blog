@@ -83,7 +83,7 @@ router.get('/post/:id', withAuth, (req, res) => {
       const post = dbPostData.get({ plain: true });
 
       // pass data to template
-      res.render('single-post', {
+      res.render('add-comment', {
         post,
         loggedIn: req.session.loggedIn
       });
