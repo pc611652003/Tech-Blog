@@ -52,59 +52,26 @@ Repository: https://github.com/pc611652003/E-commerceBackEnd
 
 ## Screenshot
 
-User can create the database in mysql by entering following command in mysql shell
-![Schema](screenshots/schema.PNG "Database Creation")
+After user go to the application, they are presented the homepage displaying all posts
+![Start](screenshots/start.PNG "Starting Page")
 
-User then seed the database with the following command in command line
-![Seed](screenshots/seed.PNG "Database Seeding")
+If user is not signed up or logged in, any link will direct user to login page
+![login](screenshots/login.PNG "Login Page")
 
-User start the server with the following command in command line
-![Start](screenshots/start.PNG "Server Start")
+After user signed up or logged in, user will redirect to homepage
+![Homepage](screenshots/homepage.PNG "Homepage")
 
-User can get all categories by sending a get request to /api/categories/
-![GetAllCategories](screenshots/GetAllCategories.PNG "Get All Categories")
+User can click on the title of any post, to see all comments and add comment
+![Comment](screenshots/Comment.PNG "Add and View Comment")
 
-User can create category by sending a post request /api/categories/
-![CreateCategory](screenshots/CreateCategory.PNG "Create Category")
+User can view all their posts by going to dashboard
+![dashboard](screenshots/dashboard.PNG "Dashboard")
 
-User can update a category by sending a put request /api/categories/:id
-![UpdateCategory](screenshots/UpdateCategory.PNG "Update Category")
+User can click on the add post button to add new post
+![AddPost](screenshots/AddPost.PNG "AddPost")
 
-User can get a category by sending a get request to /api/categories/:id
-The Image also reflects the outcome of the creation and update of the category
-![GetOneCategory](screenshots/GetOneCategory.PNG "Get One Category")
+User can click on any post on their dashboard to edit or delete post
+![EditDeletePost](screenshots/EditDeletePost.PNG "Edit and Delete Post")
 
-User can delete a category by sending a delete request /api/categories/:id
-![DeleteCategory](screenshots/DeleteCategory.PNG "Delete Category")
-
-User can get all tags by sending a get request to /api/tags/
-![GetAllTags](screenshots/GetAllTags.PNG "Get All Tags")
-
-User can create tag by sending a post request /api/tags/
-![CreateTag](screenshots/CreateTag.PNG "Create Tag")
-
-User can update a tag by sending a put request /api/tags/:id
-![UpdateTag](screenshots/UpdateTag.PNG "Update Tag")
-
-User can get a tag by sending a get request to /api/tags/:id
-The Image also reflects the outcome of the creation and update of the tag
-![GetOneTag](screenshots/GetOneTag.PNG "Get One Tag")
-
-User can delete a tag by sending a delete request /api/tags/:id
-![DeleteTag](screenshots/DeleteTag.PNG "Delete Tag")
-
-User can get all products by sending a get request to /api/products/
-![GetAllProducts](screenshots/GetAllProducts.PNG "Get All Products")
-
-User can create product by sending a post request /api/products/
-![CreateProduct](screenshots/CreateProduct.PNG "Create Product")
-
-User can update a product by sending a put request /api/products/:id
-![UpdateProduct](screenshots/UpdateProduct.PNG "Update Product")
-
-User can get a product by sending a get request to /api/products/:id
-The Image also reflects the outcome of the creation and update of the product
-![GetOneProduct](screenshots/GetOneProduct.PNG "Get One Product")
-
-User can delete a product by sending a delete request /api/products/:id
-![DeleteProduct](screenshots/DeleteProduct.PNG "Delete Product")
+User will automatically logged out after 15 mins
+![start](screenshots/start.PNG "Logged out")
