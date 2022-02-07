@@ -85,6 +85,9 @@ router.post('/login', (req, res) => {
 
     req.session.save(() => {
       // declare session variables
+      var expire_time = 15 * 60 * 1000;
+      req.session.cookie.expires = new Date(Date.now() + expire_time);
+      req.session.cookie.maxAge = expire_time;
       req.session.user_id = dbUserData.id;
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
