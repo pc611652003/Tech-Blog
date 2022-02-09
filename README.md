@@ -48,7 +48,7 @@ Third-Party Assets:
 
 Application: https://frozen-retreat-94147.herokuapp.com/
 
-Repository: https://github.com/pc611652003/E-commerceBackEnd
+Repository: https://github.com/pc611652003/Tech-Blog
 
 ## Screenshot
 
